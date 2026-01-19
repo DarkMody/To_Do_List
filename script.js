@@ -88,3 +88,9 @@ if (localStorage.getItem("color")) {
 } else {
   localStorage.setItem("color", "#eb4d4b");
 }
+
+window.addEventListener("keydown", (eve) => {
+  if (eve.key == "Enter") {
+    add.click();
+  }
+});
